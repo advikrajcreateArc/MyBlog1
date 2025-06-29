@@ -1,0 +1,148 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f0f;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #facc15;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2, h3 {
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.post-preview {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #facc15;
+  transition: background-color 0.3s ease;
+}
+
+.post-preview:hover {
+  background-color: #2a2a2a;
+}
+
+.post-preview h3 a {
+  color: #f4f4f4;
+  text-decoration: none;
+}
+
+.post-preview h3 a:hover {
+  color: #facc15;
+}
+
+.contact-form-container {
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.contact-form-container label {
+  display: block;
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  outline: 2px solid #facc15;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: #666;
+  color: white;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  cursor: not-allowed;
+}
+
+button[type="submit"]:hover:not([disabled]) {
+  background-color: #e53935;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #999;
+  border-top: 2px solid #333;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+}
